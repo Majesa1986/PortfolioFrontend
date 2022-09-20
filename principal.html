@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pagina Prueba</title>
+<meta name="description" content="Roughly 155 characters">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<!-- Content -->
+	<div class="card mat-card" id="first-card">
+		<div id="profile-bakground"><img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/09/mejor-aplicacion-fondos-pantalla-animados-llegaria-android-dentro-poco-2482649.jpg?itok=MzFSaRMp"  alt="Mi imagen de prueba" width="100%" height="100%"></div>
+		<div id="info" style="padding: 16px">
+			<div id="info-img">
+				<img class="profile-image" src="C:\Users\Maria Jesus\Pictures\Perfil.jpg" width="20%" height="20%">
+				<div button type="button" class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+			</div>
+			<div id="info-data">
+				<div>
+					<h1>Maria Jesus Sanzana</h1>
+					<div id="info-company">Contadora en Estudio Contable</div>
+					<div id="info-contac">
+						<span> Mar del Plata, Buenos Aires, Argentina </span>
+						<span><a href="#">Informacion de contacto</a></span>
+					</div>
+				</div>
+			</div>
+			<ul id="info-details">
+				<li><a href="#">
+					<img src="C:\Users\Maria Jesus\Downloads\Logo 4.PNG" width="10%" height="10%">
+					<h2>ESTUDIO SANZANA</h2>
+				</a></li>
+				<li><a href="#">
+					<img src="https://www.facpce.org.ar/web2014/images/cepce-ba.png">
+					<h2>Consejo de Buenos Aires</h2>
+				</a></li>
+			</ul>
+		</div>
+		<div id="info-actions">
+			<button type="button" class="btn-primary">Tengo interes en</button>
+			<button type="button" class="btn-light">Añadir Seccion</button>
+			<button type="button" class="btn-light">Mas</button>
+		</div>
+	</div>
+
+	<script>
+		function cambiar_parrafo(){
+			document.getElentById("edit-acercade").style.display="block;"
+			let text = document.getElentById("text-acercade").innerText;
+			console.log(texto);
+		};
+	</script>
+
+	<div class="card mat-card" id="second-card">
+		<div class="card-titles">
+			<h2>Acerca de</h2>
+			<div class="btn-edit" onclick="cambiar_parrafo()">
+				<a href="#" class="btn-right">
+					<i class="fa fa-pen"></i>
+				</a>
+			</div>
+		</div>	
+		<div>
+			<p id="text-acercade">Contadora Publica y futura programadora</p>
+		</div>
+		<div>
+			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+		</div>
+	</div>
+</body>
+</html>
